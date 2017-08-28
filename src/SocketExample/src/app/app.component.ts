@@ -10,10 +10,12 @@ export class AppComponent implements OnInit, OnDestroy {
 
   public messages: Array<any>;
   public chatBox: string;
+  public title: string;
 
   public constructor(private socket: SocketService) {
     this.messages = [];
     this.chatBox = "";
+    this.title = "Chatbox"
   }
 
   public ngOnInit() {
